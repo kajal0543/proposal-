@@ -13,7 +13,7 @@ body{
     width: 300px;
     height: 300px;
 }
-#envelope >*{
+#envelope > * {
     position: absolute;
     top: 0;
     left: 0;
@@ -91,8 +91,16 @@ p{
         left: 15px;
         right: 15px;
         bottom: 150px;
+        font-size: 16px;
+    }
+    100% {
+        top: -0px;
+        left: -55px;
+        right: -25px;
+        bottom: -100px;
         font-size: 24px;
     }
+        
 }
 
 #letter h1{
@@ -123,6 +131,12 @@ a{
     cursor: pointer;
     top: calc(200px - 25px);
     left: calc(150px - 25px);
+    transition: transform 1s, background-color 1s, color 1s;
+}
+#envelope button:hover {
+    background-color:  white;
+    transform:  scale(1.5);
+    color: rgb(255,89,0);
     transition: transform 1s, background-color 1s, color 1s;
 }
 .text h1{
