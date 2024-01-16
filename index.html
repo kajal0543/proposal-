@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter</title>
+    <link rel="stylesheet" href="open.css" />
+    <script>
+        function openUp() {
+            const $opentop = document.querySelector("#opentop");
+            const $top = document.querySelector("#top");
+            const $front = document.querySelector("#front");
+            const $back = document.querySelector("#back");
+            const $letter = document.querySelector("#letter");
+            const $button = document.querySelector("#button");
+
+            $opentop.beginElement();
+            $top.style.zIndex = 2;
+            $top.classList.add("animate");
+            $front.classList.add("animate");
+            $back.classList.add("animate");
+            $button.classList.add("animate");
+            $letter.classList.add("animate");
+        
+        }
+    </script>
+</head>
+<body>
+    <div class="text">
+        <h1>Hey! Listen this is for you Dhakan &#10084</h1>
+    </div>
+    <div id="envelope">
+        <div id="back">
+            <svg 
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            height="300"
+            width="300">
+        <polygon
+            points="0,100 300,100 300,300 0,300"
+            style="fill: #4a274a; stroke: none; stroke-width:0"/>
+        </svg>
+    </div>
+        <div id="front">
+            <svg 
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            height="300"
+            width="300">
+        <polygon
+            points="0,100 150,200 300,100 300,300 0,300"
+            style="fill:#2abad0; stroke: #ffffff; stroke-width: 3;" />
+            </svg>
+        </div>
+
+        <div id="top">
+            <svg 
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            height="300"
+            width="300">
+        <polygon
+            points="0,100 150,200 300,100"
+            style="fill:#2abad0; stroke: #ffffff; stroke-width: 2;">
+
+            <animate 
+            id="opentop"
+            attributeName="points"
+            dur="0.5s"
+            fill="freeze"
+            begin="indefinite"
+            from="0,100 150,0 300,100"
+            to="0,100 150,0 300,100 "/>
+            </polygon>
+            </svg>
+        </div>
+
+        <div id="letter">
+            <h1>For my <span>Love</span></h1>
+            <p>
+                Hello Bete! 
+                I love you mere bete very very very much ! You are the person 
+                I have been dreaming my all life . You are the most important 
+                person in my life . Kabhi kabhi toh tang krdete ho par ho to pyare 
+                se chote se bache <br/>
+                Mai hmesha apke sath rhungi chahe jitna mrji ignore kro daanto bolo
+                hum thoda thoda sudhrege pr dheere dheere otayyy koi dikkt ho toh 
+                hoti rahe hmka nahi pta samjhe ! <br/>
+                <strong>I love you the most bete</strong><br/>
+                I want to ask if you want to be my <strong>Life Partner!</strong>
+                If you accept 
+                <a href="new.html">CLICK HERE</a>
+            </p>
+        </div>
+        <button onclick="openUp()">CLICK HERE</button>
+    </div>
+</body>
+</html>
