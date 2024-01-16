@@ -63,7 +63,7 @@ div.beloved::before{
     radial-gradient(circle, #f0caab 1vmin, #e8af80 3.5vmin, transparent 3.5vmin)
     71vmin 20vmin/6vmin 8vmin no-repeat,
     radial-gradient(circle, #b40001 20vmin, transparent 20vmin)35vmin 5vmin/40vmin 40vmin no-repeat,
-    radial-gradient(circle, #b40001 20vmin, transparent 20vmin)15vmin 25vmin/40vmin 40vmin no-repeat,
+    radial-gradient(circle, #b40001 20vmin, transparent 20vmin)15vmin 25vmin/40vmin 40vmin no-repeat,  
     linear-gradient(90deg, #b40001 50vmin, transparent 50vmin) 35vmin 25vmin/40vmin 40vmin no-repeat;
 }
 
@@ -91,7 +91,7 @@ div.beloved::before{
 
 @keyframes floatturn{
     50% {
-        transform: rotateZ(45deg) translate(-3vmin);
+        transform: rotateZ(45deg) translateY(-3vmin);
 
     }
 }
