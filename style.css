@@ -1,13 +1,13 @@
 *,
-*::before,
-*::after{
+*:before,
+*:after{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 body{
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,8 +15,8 @@ body{
     background: linear-gradient(180deg, #000000 15%, #000000 100%);
 }
 
-div::before,
-div::after{
+div:before,
+div:after{
     display: block;
     content: "";
     position: absolute;
@@ -46,7 +46,7 @@ div.beloved{
     61vmin 60vmin/15vmin 30vmin no-repeat;
 }
 
-div.beloved::before{
+div.beloved:before{
     width: 100vmin;
     height: 100vmin;
     z-index: 50;
@@ -67,7 +67,7 @@ div.beloved::before{
     linear-gradient(90deg, #b40001 50vmin, transparent 50vmin) 35vmin 25vmin/40vmin 40vmin no-repeat;
 }
 
-div.beloved::after{
+div.beloved:after{
     width: 100vmin;
     height: 100vmin;
     top: 30vmin;
@@ -85,7 +85,7 @@ div.beloved::after{
     font-size: 12vmin;
 }
 
-div.beloved::before{
+div.beloved:before{
     animation: floatturn 10s ease-out infinite;
 }
 
@@ -96,7 +96,7 @@ div.beloved::before{
     }
 }
 
-div.beloved::after{
+div.beloved:after{
     animation: float 10s ease-out infinite;
 }
 
